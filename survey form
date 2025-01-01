@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<Html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kingsley">
+    <meta name="description" content="This page contains a survey form my first HMTL project as a beginner">
+    
+    <title> survey form </title>
+
+    <!-- <link rel="icon" href="pen.png" type="image/x-icon"> -->
+</head>
+<body>
+    <center>
+    <h1>SURVEY FORM</h1>
+    <br>
+    <hr>
+    <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+            <legend>Let us know how we can improve freeCodeCamp</legend>
+
+    <ul>
+        <li>
+<label for="Name">Name</label>
+<input type="text" name="Name" id="Name" placeholder="Enter your name">
+</li>
+</ul>
+
+    <ul>
+        <li>
+<label for="Email">Email</label>
+<input type="email" name="Email" id="Email" placeholder="Enter your email">
+</li>
+</ul>     
+
+    <ul>
+        <li>
+<label for="age">  Age</label>
+<input type="Number" name="age" id="age" placeholder="Age">
+</li>
+</ul>
+
+<p>
+    <label for="description">Which option best describes your current role</label>
+    <select name="description" id="description">
+        <option value="student">student</option>
+        <option value="businessman">Business Man</option>
+        <option value="lecturer">Lecturer</option>
+        <option value="entreprenuer">Entrepreneur</option>
+        <option value="other">Others</option>
+    </select>
+
+</p>
+<p>
+<label for="freecodeCamp">How likely is that you will recommend freeCodeCamp to a friend</label>
+
+<input type="radio" name="referral" id="definitely" value="definitely">
+<label for="definitely">Definitely</label>
+</p>
+
+<p>
+<input type="radio" name="referral" id="maybe" value="maybe">
+<label for="maybe">Maybe</label>
+</p>
+<p>
+<input type="radio" name="referral" id="notsure" value="notsure">
+<label for="notsure">Not Sure</label>
+</p>
+
+<p>
+    <label for="FCC">What do you like most in FCC</label>
+    <input type="text" name="FCC" id="FCC" list="FCC-list" placeholder="select an option">
+    <datalist id="FCC-list">
+        <option value="HTML tutorial">
+            <option value="Interactive session">
+                <option value="bootcamp">
+    </datalist>
+</p>
+<p>
+    <label for="future">Things that should be improved in the future </label>
+     &lpar;Check all that apply &rpar;:
+
+     <input type="checkbox" name="Things" id="frontend" value="frontend">
+     <label for="frontend">Front-end Projects</label>
+</p>
+<p>
+    <input type="checkbox" name="Things" id="backend" value="backend">
+    <label for="backend">Back-end Projects</label>
+</p>
+<p>
+    <input type="checkbox" name="Things" id="datavisualization" value="datavisualization">
+    <label for="datavisualization">Data Visualization</label>
+</p>
+
+
+</fieldset>
+    </form>
+</center>
+</body>
+</Html>
